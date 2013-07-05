@@ -1,0 +1,17 @@
+[general]
+title = Лакост
+owner = lakost@ngs.ru
+admin = ms@ensk.ru
+
+[database]
+host = ""
+login = ""
+password = ""
+name = 
+
+[menu]
+[bmenu]
+
+[messages]
+json_ok = "{'result':'ok'}"
+json_error = "{'result':'error','errors':{'submit':'Невозможно выполнить операцию'}}"

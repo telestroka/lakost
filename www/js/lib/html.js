@@ -1,0 +1,2 @@
+//количество строк в textarea
+function textareaCurLineNum(obj){var rowHeight=obj.clientHeight/obj.rows;var curHeight=obj.createTextRange().boundingHeight;return parseInt(curHeight/rowHeight)+(obj.value!=''?1:0)};

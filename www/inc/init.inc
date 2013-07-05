@@ -1,0 +1,1 @@
+<?php	require_once ($_SERVER["DOCUMENT_ROOT"] . '/lib/site.class');	$site = new Site();	require_once($site->PATH . '/lib/module.class');	require_once($site->PATH . '/lib/page.class');		//initialization	$pager = $result = '';?>

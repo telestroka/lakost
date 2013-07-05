@@ -1,0 +1,32 @@
+<?php
+/***********************************************
+-=Ms Site=-
+
+Автор: Миропольский Михаил <ms@ensk.ru>
+Описание: Класс модуля
+***********************************************/
+
+class Module
+{
+	var $NAME, $TITLE, $LEVEL, $URL, $DATA_PATH, $DATA_CATS_PATH, $DATA_URL, $DATA_CATS_URL, $AJAX_PATH, $AJAX_URL;
+	
+	function Module($name, $title, $level=1)
+	{
+		$this->NAME = $name;
+		$this->TITLE = $title;
+		$this->LEVEL = $level;
+		$this->URL = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $this->NAME;
+		$this->DATA_PATH = $_SERVER["DOCUMENT_ROOT"] . '/' . $this->NAME . '/data';
+		$this->DATA_ITEMS_PATH = $_SERVER["DOCUMENT_ROOT"] . '/' . $this->NAME . '/data/items';
+		$this->DATA_CATS_PATH = $_SERVER["DOCUMENT_ROOT"] . '/' . $this->NAME . '/data/cats';
+		$this->DATA_SECTS_PATH = $_SERVER["DOCUMENT_ROOT"] . '/' . $this->NAME . '/data/sects';
+		$this->DATA_URL = $this->URL . '/data';
+		$this->DATA_ITEMS_URL = $this->URL . '/data/items';
+		$this->DATA_CATS_URL = $this->URL . '/data/cats';
+		$this->DATA_SECTS_URL = $this->URL . '/data/sects';
+		$this->AJAX_PATH = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $this->NAME . '/ajax';
+		$this->AJAX_URL = $this->URL . '/ajax';
+		
+		return TRUE;
+	}
+}

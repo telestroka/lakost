@@ -1,0 +1,5 @@
+function abs(mixed_number){return((isNaN(mixed_number))?0:Math.abs(mixed_number))};
+function floatval(mixed_var){return(parseFloat(mixed_var)||0)};
+function intval(mixed_var,base){var tmp;if(typeof(mixed_var)=='string'){tmp=parseInt(mixed_var);if(isNaN(tmp)){return 0}else{return tmp.toString(base||10)}}else if(typeof(mixed_var)=='number'){return Math.floor(mixed_var)}else{return 0}};
+function number_format(number,decimals,dec_point,thousands_sep){var i,j,kw,kd,km;if(isNaN(decimals=Math.abs(decimals))){decimals=2}if(dec_point==undefined){dec_point=","}if(thousands_sep==undefined){thousands_sep="."}i=parseInt(number=(+number||0).toFixed(decimals))+"";if((j=i.length)>3){j=j%3}else{j=0}km=(j?i.substr(0,j)+thousands_sep:"");kw=i.substr(j).replace(/(\d{3})(?=\d)/g,"$1"+thousands_sep);kd=(decimals?dec_point+Math.abs(number-i).toFixed(decimals).replace(/-/,0).slice(2):"");return km+kw+kd};
+function rand(min,max){if(max){return Math.floor(Math.random()*(max-min+1))+min}else{return Math.floor(Math.random()*(min+1))}};

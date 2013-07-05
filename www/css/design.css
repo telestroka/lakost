@@ -1,0 +1,51 @@
+@import url("/css/reset.css");
+@import url("/css/classes.css");
+
+body, td { font-size: 10pt; font-family: Arial, sans-serif; color: #605E5D; }
+
+a {  color: #0093DD; }
+a:hover{ color:#f26522; }
+
+.alert { color: red; font-size: xx-small; }
+
+.bg { background-color: #007CC3;  }
+.logo { font-size: 16pt; color: white; }
+
+.slogan { font-size: 16pt; color: white; }
+.about { color: #FFFDC9; }
+.middle { color: #0093DD; }
+.light { color: #E77919; }
+.text-header { font-size: 16pt; color: #0093DD; }
+.text-main { font-size: 14pt; color: #0093DD; }
+.separator { background-color: #DFDFDE; height: 10px; margin-top: 10px; }
+
+a:hover{ color:#f26522; }
+
+label { display: block; }
+
+.data-table
+{
+	margin-top: 20px;
+	width: 80%;
+}
+	.data-table td
+	{
+		padding: 5px 30px 5px 10px;
+	}
+	.data-table td.right
+	{		
+		padding-left: 50px;
+		padding-right: 10px;
+		text-align: right;
+	}
+	.data-table td.td-image
+	{
+		width: 0;
+		padding: 5px 0 5px 0;
+	}
+	.data-table td.td-image img
+	{
+		margin: 0 30px 0 10px;
+	}
+	
+.admin-arrow { cursor: pointer; }
